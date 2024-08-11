@@ -18,7 +18,18 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
  }
  
  function validateInput(testInput) {
-    
+    const pilotName = document.getElementById('pilotName');
+    const copilotName = document.getElementById('copilotName');
+    const fuelLevel = document.getElementById('fuelLevel');
+    const cargoMass = document.getElementById('cargoMass');
+
+    console.log(pilotName.value);
+    console.log(copilotName.value);
+    console.log(fuelLevel.value);
+    console.log(cargoMass.value);
+
+
+    event.defaultPrevented();
  }
  
  function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
